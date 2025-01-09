@@ -1,0 +1,1013 @@
+Adrian, [11/23/2024 6:36 PM]
+adrian@adrian-TM1703:~$ ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.1  0.1  23904 15084 ?        Ss   19:13   0:10 /sbin/init sp
+root           2  0.0  0.0      0     0 ?        S    19:13   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    19:13   0:00 [pool_workque
+root           4  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-rc
+root           5  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-rc
+root           6  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-sl
+root           7  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-ne
+root           9  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/0:0H
+root          12  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-mm
+root          13  0.0  0.0      0     0 ?        I    19:13   0:00 [rcu_tasks_kt
+root          14  0.0  0.0      0     0 ?        I    19:13   0:00 [rcu_tasks_ru
+root          15  0.0  0.0      0     0 ?        I    19:13   0:00 [rcu_tasks_tr
+root          16  0.6  0.0      0     0 ?        S    19:13   0:50 [ksoftirqd/0]
+root          17  0.0  0.0      0     0 ?        I    19:13   0:02 [rcu_preempt]
+root          18  0.0  0.0      0     0 ?        S    19:13   0:00 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    19:13   0:00 [idle_inject/
+root          20  0.0  0.0      0     0 ?        S    19:13   0:00 [cpuhp/0]
+root          21  0.0  0.0      0     0 ?        S    19:13   0:00 [cpuhp/1]
+root          22  0.0  0.0      0     0 ?        S    19:13   0:00 [idle_inject/
+root          23  0.0  0.0      0     0 ?        S    19:13   0:00 [migration/1]
+root          24  0.1  0.0      0     0 ?        S    19:13   0:15 [ksoftirqd/1]
+root          26  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/1:0H
+root          27  0.0  0.0      0     0 ?        S    19:13   0:00 [cpuhp/2]
+root          28  0.0  0.0      0     0 ?        S    19:13   0:00 [idle_inject/
+root          29  0.0  0.0      0     0 ?        S    19:13   0:00 [migration/2]
+root          30  0.0  0.0      0     0 ?        S    19:13   0:00 [ksoftirqd/2]
+root          32  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/2:0H
+root          33  0.0  0.0      0     0 ?        S    19:13   0:00 [cpuhp/3]
+root          34  0.0  0.0      0     0 ?        S    19:13   0:00 [idle_inject/
+root          35  0.0  0.0      0     0 ?        S    19:13   0:00 [migration/3]
+root          36  0.0  0.0      0     0 ?        S    19:13   0:00 [ksoftirqd/3]
+root          38  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/3:0H
+root          39  0.0  0.0      0     0 ?        S    19:13   0:00 [cpuhp/4]
+root          40  0.0  0.0      0     0 ?        S    19:13   0:00 [idle_inject/
+root          41  0.0  0.0      0     0 ?        S    19:13   0:00 [migration/4]
+root          42  0.0  0.0      0     0 ?        S    19:13   0:00 [ksoftirqd/4]
+root          44  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/4:0H
+root          45  0.0  0.0      0     0 ?        S    19:13   0:00 [cpuhp/5]
+root          46  0.0  0.0      0     0 ?        S    19:13   0:00 [idle_inject/
+root          47  0.0  0.0      0     0 ?        S    19:13   0:00 [migration/5]
+root          48  0.0  0.0      0     0 ?        S    19:13   0:00 [ksoftirqd/5]
+root          50  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/5:0H
+root          51  0.0  0.0      0     0 ?        S    19:13   0:00 [cpuhp/6]
+root          52  0.0  0.0      0     0 ?        S    19:13   0:00 [idle_inject/
+root          53  0.0  0.0      0     0 ?        S    19:13   0:00 [migration/6]
+root          54  0.0  0.0      0     0 ?        S    19:13   0:00 [ksoftirqd/6]
+root          55  0.0  0.0      0     0 ?        I    19:13   0:01 [kworker/6:0-
+root          56  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/6:0H
+root          57  0.0  0.0      0     0 ?        S    19:13   0:00 [cpuhp/7]
+root          58  0.0  0.0      0     0 ?        S
+
+Adrian, [11/23/2024 6:36 PM]
+19
+
+Adrian, [11/23/2024 6:36 PM]
+S    1
+
+Adrian, [11/23/2024 6:36 PM]
+9
+
+Adrian, [11/23/2024 6:36 PM]
+19
+
+Adrian, [11/23/2024 6:36 PM]
+:13   0:00 [idle_inject/
+root          59  0.0  0.0      0     0 ?        S    19:13   0:00 [migration/7]
+root          60  0.0  0.0      0     0 ?        S    19:13   0:00 [ksoftirqd/7]
+root          62  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/7:0H
+root          63  0.0  0.0      0     0 ?        S    19:13   0:00 [kdevtmpfs]
+root          64  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-in
+root          66  0.0  0.0      0     0 ?        S    19:13   0:00 [kauditd]
+root          68  0.0  0.0      0     0 ?        S    19:13   0:00 [khungtaskd]
+root          69  0.0  0.0      0     0 ?        S    19:13   0:00 [oom_reaper]
+root          71  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-wr
+root          72  0.0  0.0      0     0 ?        S    19:13   0:00 [kcompactd0]
+root          73  0.0  0.0      0     0 ?        SN   19:13   0:00 [ksmd]
+root          75  0.0  0.0      0     0 ?        SN   19:13   0:00 [khugepaged]
+root          76  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-ki
+root          77  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-kb
+root          78  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-bl
+root          79  0.0  0.0      0     0 ?        S    19:13   0:00 [irq/9-acpi]
+root          81  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-tp
+root          82  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-at
+root          83  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-md
+root          84  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-md
+root          85  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-ed
+root          86  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-de
+root          87  0.0  0.0      0     0 ?        S    19:13   0:00 [watchdogd]
+root          89  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/2:1H
+root          91  0.0  0.0      0     0 ?        S    19:13   0:00 [kswapd0]
+root          92  0.0  0.0      0     0 ?        S    19:13   0:00 [ecryptfs-kth
+root          93  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-kt
+root          94  0.0  0.0      0     0 ?        S    19:13   0:00 [irq/122-aerd
+root          95  0.0  0.0      0     0 ?        S    19:13   0:00 [irq/123-aerd
+root          96  0.0  0.0      0     0 ?        S    19:13   0:00 [irq/124-aerd
+root          98  0.0  0.0      0     0 ?        I    19:13   0:00 [kworker/7:1-
+root          99  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-ac
+root         100  0.0  0.0      0     0 ?        S    19:13   0:00 [hwrng]
+root         102  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-ml
+root         103  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/0:1H
+root         104  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-ip
+root         111  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-ks
+root         126  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-ch
+root         152  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/1:1H
+root         171  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/5:1H
+root         175  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/4:1H
+root         181  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/3:1H
+root         184  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/6:1H
+root         190  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/7:1H
+root         208  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-nv
+root         214  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-nv
+root         216  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-nv
+root         217  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-nv
+root         224  0.0  0.0      0     0 ?        S    19:13   0:00 [scsi_eh_0]
+root         225  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-sc
+root         234  0.0  0.0      0     0 ?        S
+
+Adrian, [11/23/2024 6:36 PM]
+19:13   0:00 [scsi_eh_1]
+root         235  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-sc
+root         268  0.0  0.0      0     0 ?        S    19:13   0:07 [irq/51-ELAN2
+root         269  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-US
+root         306  0.0  0.0      0     0 ?        S    19:13   0:00 [jbd2/nvme0n1
+root         307  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-ex
+root         361  0.0  0.2  67252 19220 ?        S<s  19:13   0:02 /usr/lib/syst
+root         398  0.0  0.1  30692  8816 ?        Ss   19:13   0:01 /usr/lib/syst
+root         438  0.0  0.0      0     0 ?        S    19:13   0:00 [psimon]
+root         591  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-cf
+root         612  0.0  0.0      0     0 ?        I<   19:13   0:03 [kworker/u17:
+root         622  0.1  0.0      0     0 ?        S    19:13   0:15 [irq/144-iwlw
+root         694  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-tt
+root         697  0.0  0.0      0     0 ?        S    19:13   0:00 [nv_queue]
+root         698  0.0  0.0      0     0 ?        S    19:13   0:00 [nv_queue]
+root         705  0.0  0.0      0     0 ?        S    19:13   0:00 [card1-crtc0]
+root         706  0.0  0.0      0     0 ?        S    19:13   0:00 [card1-crtc1]
+root         707  0.0  0.0      0     0 ?        S    19:13   0:00 [card1-crtc2]
+root         708  0.0  0.0      0     0 ?        I<   19:13   0:00 [kworker/R-cr
+_rpc         865  0.0  0.0   7968  3968 ?        Ss   19:13   0:00 /sbin/rpcbind
+systemd+     884  0.0  0.0  17556  7652 ?        Ss   19:13   0:03 /usr/lib/syst
+systemd+     885  0.0  0.1  21716 13352 ?        Ss   19:13   0:00 /usr/lib/syst
+root         886  0.0  0.0      0     0 ?        S    19:13   0:00 [nvidia-modes
+root         887  0.0  0.0      0     0 ?        S    19:13   0:00 [nvidia-modes
+systemd+     890  0.0  0.0  91044  7920 ?        Ssl  19:13   0:00 /usr/lib/syst
+root         891  0.0  0.0      0     0 ?        S    19:13   0:01 [irq/146-nvid
+root         893  0.0  0.0      0     0 ?        S    19:13   0:00 [nv_queue]
+avahi        953  0.0  0.0   8664  4672 ?        Ss   19:13   0:00 avahi-daemon:
+root         954  0.0  0.0  13652  6912 ?        Ss   19:13   0:00 /usr/libexec/
+message+     955  0.0  0.0  12304  7660 ?        Ss   19:13   0:05 @dbus-daemon 
+gnome-r+     958  0.0  0.2 439204 16740 ?        Ssl  19:13   0:00 /usr/libexec/
+polkitd      965  0.0  0.1 399380 12324 ?        Ssl  19:13   0:02 /usr/lib/polk
+root         968  0.0  0.0 322176  8016 ?        Ssl  19:13   0:00 /usr/libexec/
+root         977  0.3  0.4 2288052 35172 ?       Ssl  19:13   0:30 /usr/lib/snap
+root         980  0.0  0.1 322356  8236 ?        Ssl  19:13   0:00 /usr/libexec/
+root         981  0.0  0.0  18092  2948 ?        Ss   19:13   0:00 /usr/sbin/cro
+root         982  0.0  0.0 318556  7204 ?        Ssl  19:13   0:00 /usr/libexec/
+root         985  0.0  0.1  18200  9352 ?        Ss   19:13   0:01 /usr/lib/syst
+root         995  0.0  0.1 433536 11484 ?        Ssl  19:13   0:00 /usr/sbin/the
+root         997  0.0  0.1 470252 14976 ?        Ssl  19:13   0:01 /usr/libexec/
+avahi        999  0.0  0.0   8476  1520 ?        S    19:13   0:00 avahi-daemon:
+root        1000  0.0  0.2 345496 19920 ?        Ssl  19:13   0:02 /usr/sbin/Net
+root        1004  0.0  0.1  18260 12048 ?        Ss   19:13   0:00 /usr/sbin/wpa
+syslog      1044  0.0  0.0 222564  5956 ?        Ssl  19:13   0:00 /usr/sbin/rsy
+root        1223  0.0  0.1 392180 12716 ?        Ssl  19:13   0:00 /usr/sbin/Mod
+root        1433  0.0  0.0      0     0 ?        S    19:13   0:00 [UVM global q
+root        1434  0.0  0.0      0     0 ?        S    19:13   0:00 [UVM deferred
+root        1436  0.0  0.0      0     0 ?        S    19:13   0:00 [UVM Tools Ev
+nvidia-+    1454  0.0  0.0   5228  2092 ?        Ss   19:13   0:00 /usr/bin/nvid
+root        1658  0.0  0.1  46912 12160 ?        Ss   19:13   0:00 /usr/sbin/cup
+root        1669  0.0  0.2 120888 23088 ?        Ssl  19:13   0:00 /usr/bin/pyth
+root        1695  0.0  0.0  12020
+
+Adrian, [11/23/2024 6:36 PM]
+0  12020
+
+Adrian, [11/23/2024 6:36 PM]
+.0  1202
+
+Adrian, [11/23/2024 6:36 PM]
+0  7964 ?        Ss   19:13   0:00 sshd: /usr/sb
+root        1702  0.0  0.3 241168 30020 ?        Ss   19:13   0:00 /usr/sbin/apa
+root        1704  0.0  0.1 323492  9392 ?        Ssl  19:13   0:00 /usr/sbin/gdm
+www-data    1711  0.0  0.1 241904 15108 ?        S    19:13   0:00 /usr/sbin/apa
+www-data    1712  0.0  0.1 241904 15108 ?        S    19:13   0:00 /usr/sbin/apa
+www-data    1713  0.0  0.1 241904 15104 ?        S    19:13   0:00 /usr/sbin/apa
+www-data    1714  0.0  0.1 241904 15108 ?        S    19:13   0:00 /usr/sbin/apa
+www-data    1716  0.0  0.1 241904 15104 ?        S    19:13   0:00 /usr/sbin/apa
+rtkit       1787  0.0  0.0  22940  3524 ?        SNsl 19:13   0:00 /usr/libexec/
+root        1830  0.0  0.0      0     0 ?        S<   19:13   0:00 [krfcommd]
+colord      1963  0.0  0.1 328748 14948 ?        Ssl  19:13   0:00 /usr/libexec/
+cups-br+    1995  0.0  0.2 268392 20032 ?        Ssl  19:13   0:00 /usr/sbin/cup
+kernoops    2004  0.0  0.0  12744  2352 ?        Ss   19:13   0:00 /usr/sbin/ker
+nagios      2008  0.0  0.2 169152 17168 ?        Ssl  19:13   0:01 /usr/lib/x86_
+kernoops    2010  0.0  0.0  12744  2372 ?        Ss   19:13   0:00 /usr/sbin/ker
+nagios      2048  0.0  0.3 1487416 24464 ?       Sl   19:13   0:07 /usr/lib/x86_
+nagios      2065  0.0  0.0 169152  6180 ?        S    19:13   0:02 /usr/lib/x86_
+root        2135  0.0  0.1 325852  9768 ?        Ssl  19:13   0:01 /usr/libexec/
+root        2446  0.0  0.1 398728 11224 ?        Sl   19:14   0:00 gdm-session-w
+adrian      2467  0.1  0.1  21552 13560 ?        Ss   19:14   0:08 /usr/lib/syst
+adrian      2471  0.0  0.0  21456  3608 ?        S    19:14   0:00 (sd-pam)
+adrian      2481  0.0  0.1 123808 14736 ?        S<sl 19:14   0:00 /usr/bin/pipe
+adrian      2483  0.0  0.0 106404  6160 ?        Ssl  19:14   0:00 /usr/bin/pipe
+adrian      2487  0.0  0.2 416112 19396 ?        S<sl 19:14   0:02 /usr/bin/wire
+adrian      2488  0.0  0.2 125560 19064 ?        S<sl 19:14   0:00 /usr/bin/pipe
+adrian      2489  0.0  0.1 325176 10440 ?        SLsl 19:14   0:00 /usr/bin/gnom
+adrian      2497  0.0  0.0  10844  6600 ?        Ss   19:14   0:04 /usr/bin/dbus
+adrian      2525  0.0  0.0 545228  7720 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      2537  0.0  0.0 318108  6284 ?        Ssl  19:14   0:00 /usr/libexec/
+root        2546  0.0  0.0   2704  2064 ?        Ss   19:14   0:00 fusermount3 -
+adrian      2566  0.0  0.0 244380  6200 tty2     Ssl+ 19:14   0:00 /usr/libexec/
+adrian      2573  4.6  1.8 26143600 149344 tty2  Sl+  19:14   6:04 /usr/lib/xorg
+adrian      2662  0.0  0.2 306876 16816 tty2     Sl+  19:14   0:00 /usr/libexec/
+adrian      2742  0.0  0.1  39128 12108 ?        Ss   19:14   0:00 /snap/snapd-d
+adrian      2761  0.0  0.1 382952  8212 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      2779  0.0  0.0   9476  5140 ?        S    19:14   0:00 /usr/bin/dbus
+adrian      2810  0.0  1.3 1301348 109936 ?      Sl   19:14   0:01 /snap/snapd-d
+adrian      2813  0.0  0.0 162652  7024 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      2814  0.0  0.0 100216  5696 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      2828  0.0  0.1 322932  8060 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      2836  0.0  0.0 468380  7192 ?        Sl   19:14   0:00 /usr/libexec/
+adrian      2839  0.0  0.2 529144 18560 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      2883  4.0  3.5 4724620 288464 ?      Ssl  19:14   5:16 /usr/bin/gnom
+adrian      2935  0.0  1.2 1092964 101568 ?      Sl   19:14   0:01 /usr/libexec/
+adrian      2938  0.0  0.1 236056  8256 ?        Sl   19:14   0:00 /usr/libexec/
+adrian      2970  0.0  0.2 654876 18056 ?        Sl   19:14   0:00 /usr/libexec/
+adrian      2977  0.0  0.5 1009724 43512 ?       Ssl  19:14   0:00 /usr/libexec/
+adrian      2985  0.0  0.0 230320  6196 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      2994  0.0  0.3 2933424 27536 ?       Sl   19:14   0:00 /usr/bin/gjs 
+adrian      3010  0.0  0.3 555336 24404 ?        Sl   19:14   0:00 /usr/libexec/
+adrian      3014  0.0  0.1 397528 12528 ?        Ssl  19:14   0:06 /usr/bin/ibus
+adria
+
+Adrian, [11/23/2024 6:36 PM]
+n      3016  0.0  0.0 392200  6916 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3017  0.0  0.3 424252 25324 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3018  0.0  0.1 440352 12428 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3022  0.0  0.1 393824  8236 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3023  0.0  0.3 422988 24684 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3026  0.0  0.3 752884 30432 ?        Ssl  19:14   0:01 /usr/libexec/
+adrian      3033  0.0  0.3 604204 30724 ?        Ssl  19:14   0:01 /usr/libexec/
+adrian      3034  0.0  0.1 332312 11448 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3038  0.0  0.0 539752  6856 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3042  0.0  0.0 318228  6452 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3046  0.0  0.1 552008 12224 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3049  0.0  0.1 394500  8432 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3051  0.0  0.1 402316  9860 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3054  0.0  0.3 423772 24988 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3055  0.0  0.3 425248 27496 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3057  0.0  0.1 471528  9416 ?        Sl   19:14   0:00 /usr/libexec/
+adrian      3065  0.0  0.1 305492  8068 ?        Sl   19:14   0:00 /usr/libexec/
+adrian      3092  0.0  0.8 895192 64856 ?        Sl   19:14   0:01 /usr/libexec/
+adrian      3172  0.0  0.0 245316  7128 ?        Sl   19:14   0:00 /usr/libexec/
+adrian      3174  0.1  0.3 356500 31872 ?        Sl   19:14   0:11 /usr/libexec/
+adrian      3179  0.0  0.3 275872 24756 ?        Sl   19:14   0:00 /usr/libexec/
+adrian      3184  0.0  0.0 319096  7356 ?        Sl   19:14   0:00 /usr/libexec/
+adrian      3185  0.0  0.3 1374572 24724 ?       Ssl  19:14   0:00 /usr/libexec/
+adrian      3219  0.0  0.1 398128 11236 ?        Ssl  19:14   0:02 /usr/libexec/
+adrian      3222  0.0  0.1 424872 15312 ?        Sl   19:14   0:00 /usr/libexec/
+adrian      3268  0.0  0.3 834096 30176 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3279  0.0  0.0 319428  6996 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3294  0.0  0.1 398044  8072 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3309  0.0  0.0 318460  6740 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3314  0.0  0.0 318440  6676 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3324  0.0  0.3 2876052 27224 ?       Sl   19:14   0:00 /usr/bin/gjs 
+adrian      3340  0.0  0.3 745060 25244 ?        SNsl 19:14   0:01 /usr/libexec/
+adrian      3346  0.0  0.0 245440  7488 ?        Rl   19:14   0:01 /usr/libexec/
+adrian      3404  0.0  0.1 544380  9260 ?        Sl   19:14   0:00 /usr/libexec/
+adrian      3429  0.0  0.1 562964 14500 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3434  0.0  1.8 1906496 151804 ?      Ssl  19:14   0:06 /usr/libexec/
+adrian      3498  0.0  0.3 424008 26456 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3544  0.0  0.0 244972  6476 ?        Ssl  19:14   0:00 /usr/libexec/
+adrian      3608 62.3  8.1 12389508 653808 ?     Sl   19:14  82:01 /snap/firefox
+root        4017  0.0  0.0      0     0 ?        I    19:14   0:01 [kworker/4:3-
+adrian      4067  0.0  0.6 211696 48880 ?        Sl   19:14   0:00 /snap/firefox
+adrian      4220  0.1  1.8 2515436 145460 ?      Sl   19:14   0:08 /snap/firefox
+root        4225  0.0  0.0      0     0 ?        S    19:14   0:00 [psimon]
+adrian      4264  0.0  0.2 2131932 21284 ?       Sl   19:14   0:00 /usr/bin/snap
+adrian      4448  0.2  1.5 2480164 126764 ?      Sl   19:14   0:19 /snap/firefox
+adrian      4830  0.6  2.7 2637660 219264 ?      Sl   19:14   0:54 /snap/firefox
+adrian      4870  0.0  0.7 352556 63428 ?        Sl   19:14   0:00 /snap/firefox
+adrian      4878 35.4  5.3 3020444 431336 ?      Sl   19:14  46:37 /snap/firefox
+adrian      4896  0.0  1.0 2424392 87208 ?       Sl   19:14   0:07 /snap/firefox
+adrian      4918  0.2  1.0 2426868 84336 ?       Sl   19:14   0:15 /snap/firefox
+adrian      4979  3.4  3.4 19641904 278788 ?     Sl
+
+Adrian, [11/23/2024 6:36 PM]
+Sl   19
+
+Adrian, [11/23/2024 6:36 PM]
+Sl
+
+Adrian, [11/23/2024 6:36 PM]
+19:14   4:31 /snap/firefox
+adrian      5003  0.1  1.1 2441696 95048 ?       Sl   19:14   0:09 /snap/firefox
+adrian      5007  0.7  2.4 2684340 193816 ?      Sl   19:14   0:58 /snap/firefox
+adrian      5133  0.0  0.5 619012 42636 ?        Sl   19:15   0:01 /usr/bin/upda
+root        5365  0.0  0.5 488220 41480 ?        Ssl  19:19   0:03 /usr/libexec/
+root        5380  0.0  0.0      0     0 ?        I    19:19   0:00 [kworker/2:0-
+root        5920  0.0  0.0      0     0 ?        I    19:36   0:02 [kworker/1:0-
+root        6716  0.0  0.0      0     0 ?        I<   19:46   0:03 [kworker/u17:
+root        7319  0.0  0.0      0     0 ?        I    20:01   0:00 [kworker/1:1-
+root        7725  0.0  0.0      0     0 ?        I    20:10   0:00 [kworker/5:3-
+adrian      7762  0.0  1.6 656884 136184 ?       Sl   20:10   0:01 /snap/firefox
+root        8122  0.0  0.0      0     0 ?        I    20:18   0:00 [kworker/4:0-
+root        8480  0.0  0.0      0     0 ?        I    20:26   0:00 [kworker/3:2-
+root        8511  0.0  0.0      0     0 ?        I    20:26   0:00 [kworker/u16:
+root        8533  0.0  0.0      0     0 ?        I    20:57   0:00 [kworker/u16:
+root        8558  0.0  0.0      0     0 ?        S    20:57   0:00 [irq/134-mei_
+root        8585  0.0  0.0      0     0 ?        S    20:57   0:00 [nvidia]
+adrian      8972  5.0  2.4 2564648 193044 ?      Sl   20:58   1:23 /snap/firefox
+adrian      8978  1.7  3.5 2767708 288320 ?      Sl   20:58   0:29 /snap/firefox
+adrian      9092  0.0  0.1 470876  8704 ?        Sl   20:59   0:00 /usr/libexec/
+adrian      9107  0.0  0.1 399216  8832 ?        Sl   20:59   0:00 /usr/libexec/
+adrian      9910  3.4  3.6 2672512 295100 ?      Sl   21:07   0:38 /snap/firefox
+root       10084  0.2  0.0      0     0 ?        I    21:08   0:02 [kworker/0:1-
+root       10135  0.0  0.0      0     0 ?        I    21:09   0:00 [kworker/6:2]
+root       10240  0.0  0.0      0     0 ?        I    21:09   0:00 [kworker/u16:
+root       10245  0.0  0.0      0     0 ?        I    21:10   0:00 [kworker/3:1-
+adrian     10340  0.2  0.6 849780 53012 ?        Ssl  21:11   0:02 /usr/libexec/
+adrian     10353  0.0  0.0  19688  5120 pts/0    Ss   21:11   0:00 bash
+root       11206  0.2  0.0      0     0 ?        I<   21:15   0:01 [kworker/u17:
+root       11250  0.4  0.0      0     0 ?        I    21:16   0:02 [kworker/0:0-
+root       11301  0.0  0.0      0     0 ?        I    21:16   0:00 [kworker/2:2-
+root       11310  0.0  0.0      0     0 ?        I    21:16   0:00 [kworker/7:0-
+root       11533  0.0  0.0      0     0 ?        I    21:20   0:00 [kworker/5:2-
+adrian     11658  0.4  0.7 3149132 58228 ?       Sl   21:20   0:01 gjs /usr/shar
+root       11732  0.0  0.0      0     0 ?        I    21:20   0:00 [kworker/u16:
+adrian     11739  2.7  2.0 2633684 166032 ?      Sl   21:20   0:09 /snap/firefox
+root       11863  0.0  0.0      0     0 ?        I    21:21   0:00 [kworker/1:2-
+root       11889  0.0  0.0      0     0 ?        I    21:21   0:00 [kworker/u16:
+adrian     12037  0.3  0.9 2404700 73984 ?       Sl   21:23   0:00 /snap/firefox
+root       12148  0.1  0.0      0     0 ?        I<   21:23   0:00 [kworker/u17:
+root       12204  0.0  0.0      0     0 ?        I    21:23   0:00 [kworker/0:2-
+root       12401  0.0  0.0      0     0 ?        I    21:24   0:00 [kworker/7:2-
+adrian     12471  0.8  0.9 2404436 73216 ?       Sl   21:25   0:00 /snap/firefox
+adrian     12520  0.9  0.9 2404432 72832 ?       Sl   21:25   0:00 /snap/firefox
+adrian     12614  600  0.0  22552  4736 pts/0    R+   21:26   0:00 ps aux
+adrian@adrian-TM1703:~$ ps -o pid,ppid,cmd -p 1234
+    PID    PPID CMD
+adrian@adrian-TM1703:~$ ^C
+adrian@adrian-TM1703:~$ ps -o pid,ppid,cmd -p 5678
+    PID    PPID CMD
+adrian@adrian-TM1703:~$ ps --ppid 1234
+    PID TTY          TIME CMD
+adrian@adrian-TM1703:~$ ps --ppid 5678
+    PID TTY          TIME CMD
+adrian@adrian-TM1703:~$ pstree -p
+systemd(1)─┬─ModemManager(1223)─┬─{ModemManager}(1379)
+           │                    ├─{ModemManager}(1382)
+           │                    └─{ModemManager}(1387)
+           ├─Network
+
+Adrian, [11/23/2024 6:36 PM]
+Manager(1000)─┬─{NetworkManager}(1050)
+           │                      ├─{NetworkManager}(1053)
+           │                      └─{NetworkManager}(1057)
+           ├─accounts-daemon(980)─┬─{accounts-daemon}(1123)
+           │                      ├─{accounts-daemon}(1124)
+           │                      └─{accounts-daemon}(1145)
+           ├─apache2(1702)─┬─apache2(1711)
+           │               ├─apache2(1712)
+           │               ├─apache2(1713)
+           │               ├─apache2(1714)
+           │               └─apache2(1716)
+           ├─avahi-daemon(953)───avahi-daemon(999)
+           ├─bluetoothd(954)
+           ├─colord(1963)─┬─{colord}(1978)
+           │              ├─{colord}(1979)
+           │              └─{colord}(1981)
+           ├─cron(981)
+           ├─cups-browsed(1995)─┬─{cups-browsed}(2013)
+           │                    ├─{cups-browsed}(2014)
+           │                    └─{cups-browsed}(2015)
+           ├─cupsd(1658)
+           ├─dbus-daemon(955)
+           ├─fwupd(5365)─┬─{fwupd}(5366)
+           │             ├─{fwupd}(5367)
+           │             ├─{fwupd}(5368)
+           │             ├─{fwupd}(5369)
+           │             └─{fwupd}(5371)
+           ├─gdm3(1704)─┬─gdm-session-wor(2446)─┬─gdm-x-session(2566)─┬─Xorg(25+
+           │            │                       │                     ├─gnome-s+
+           │            │                       │                     ├─{gdm-x-+
+           │            │                       │                     ├─{gdm-x-+
+           │            │                       │                     └─{gdm-x-+
+           │            │                       ├─{gdm-session-wor}(2448)
+           │            │                       ├─{gdm-session-wor}(2449)
+           │            │                       └─{gdm-session-wor}(2450)
+           │            ├─{gdm3}(1706)
+           │            ├─{gdm3}(1707)
+           │            └─{gdm3}(1708)
+           ├─gnome-remote-de(958)─┬─{gnome-remote-de}(1038)
+           │                      ├─{gnome-remote-de}(1039)
+           │                      └─{gnome-remote-de}(1040)
+           ├─icinga2(2008)─┬─icinga2(2048)─┬─icinga2(2065)
+           │               │               ├─{icinga2}(2049)
+           │               │               ├─{icinga2}(2050)
+           │               │               ├─{icinga2}(2051)
+           │               │               ├─{icinga2}(2052)
+           │               │               ├─{icinga2}(2053)
+           │               │               ├─{icinga2}(2054)
+           │               │               ├─{icinga2}(2055)
+           │               │               ├─{icinga2}(2056)
+           │               │               ├─{icinga2}(2057)
+           │               │               ├─{icinga2}(2058)
+           │               │               ├─{icinga2}(2059)
+           │               │               ├─{icinga2}(2060)
+           │               │               ├─{icinga2}(2061)
+           │               │               ├─{icinga2}(2062)
+           │               │               ├─{icinga2}(2063)
+           │               │               ├─{icinga2}(2064)
+           │               │               ├─{icinga2}(2100)
+           │               │               ├─{icinga2}(2101)
+           │               │               ├─{icinga2}(2426)
+           │               │               ├─{icinga2}(2427)
+           │               │               ├─{icinga2}(2428)
+           │               │               └─{icinga2}(2429)
+           │               ├─{icinga2}(2075)
+           │               ├─{icinga2}(2076)
+           │               ├─{icinga2}(2077)
+           │               ├─{icinga2}(2078)
+           │               ├─{icinga2}(2079)
+           │               ├─{icinga2}(2080)
+           │               ├─{icinga2}(2081)
+           │               ├─{icinga2}(2082)
+           │               ├─{icinga2}(2083)
+           │               ├─{icinga2}(2084)
+           │               ├─{icinga2}(2085)
+           │               ├─{icinga2}(2086)
+           │
+
+Adrian, [11/23/2024 6:36 PM]
+│
+
+Adrian, [11/23/2024 6:36 PM]
+├─{icinga2}(2087)
+           │               ├─{icinga2}(2088)
+           │               ├─{icinga2}(2089)
+           │               └─{icinga2}(2090)
+           ├─kerneloops(2004)
+           ├─kerneloops(2010)
+           ├─nvidia-persiste(1454)
+           ├─polkitd(965)─┬─{polkitd}(1160)
+           │              ├─{polkitd}(1161)
+           │              └─{polkitd}(1165)
+           ├─power-profiles-(968)─┬─{power-profiles-}(1051)
+           │                      ├─{power-profiles-}(1052)
+           │                      └─{power-profiles-}(1061)
+           ├─rpcbind(865)
+           ├─rsyslogd(1044)─┬─{rsyslogd}(1114)
+           │                ├─{rsyslogd}(1115)
+           │                └─{rsyslogd}(1116)
+           ├─rtkit-daemon(1787)─┬─{rtkit-daemon}(1799)
+           │                    └─{rtkit-daemon}(1800)
+           ├─snapd(977)─┬─{snapd}(984)
+           │            ├─{snapd}(987)
+           │            ├─{snapd}(988)
+           │            ├─{snapd}(990)
+           │            ├─{snapd}(993)
+           │            ├─{snapd}(996)
+           │            ├─{snapd}(1034)
+           │            ├─{snapd}(1109)
+           │            ├─{snapd}(1110)
+           │            ├─{snapd}(1540)
+           │            ├─{snapd}(1541)
+           │            ├─{snapd}(1566)
+           │            ├─{snapd}(1651)
+           │            └─{snapd}(2589)
+           ├─sshd(1695)
+           ├─switcheroo-cont(982)─┬─{switcheroo-cont}(1059)
+           │                      ├─{switcheroo-cont}(1060)
+           │                      └─{switcheroo-cont}(1067)
+           ├─systemd(2467)─┬─(sd-pam)(2471)
+           │               ├─at-spi-bus-laun(2761)─┬─dbus-daemon(2779)
+           │               │                       ├─{at-spi-bus-laun}(2769)
+           │               │                       ├─{at-spi-bus-laun}(2770)
+           │               │                       ├─{at-spi-bus-laun}(2771)
+           │               │                       └─{at-spi-bus-laun}(2773)
+           │               ├─at-spi2-registr(2938)─┬─{at-spi2-registr}(2941)
+           │               │                       ├─{at-spi2-registr}(2942)
+           │               │                       └─{at-spi2-registr}(2943)
+           │               ├─dbus-daemon(2497)
+           │               ├─dconf-service(2985)─┬─{dconf-service}(2987)
+           │               │                     ├─{dconf-service}(2988)
+           │               │                     └─{dconf-service}(2989)
+           │               ├─evolution-addre(3268)─┬─{evolution-addre}(3272)
+           │               │                       ├─{evolution-addre}(3273)
+           │               │                       ├─{evolution-addre}(3275)
+           │               │                       ├─{evolution-addre}(3281)
+           │               │                       ├─{evolution-addre}(3282)
+           │               │                       └─{evolution-addre}(3291)
+           │               ├─evolution-calen(3185)─┬─{evolution-calen}(3210)
+           │               │                       ├─{evolution-calen}(3212)
+           │               │                       ├─{evolution-calen}(3231)
+           │               │                       ├─{evolution-calen}(3248)
+           │               │                       ├─{evolution-calen}(3249)
+           │               │                       ├─{evolution-calen}(3261)
+           │               │                       ├─{evolution-calen}(3266)
+           │               │                       ├─{evolution-calen}(3267)
+           │               │                       └─{evolution-calen}(3293)
+           │               ├─evolution-sourc(2977)─┬─{evolution-sourc}(2980)
+           │               │                       ├─{evolution-sourc}(2981)
+           │               │                       ├─{evolution-sourc}(2982)
+           │               │                       └─{evolution-sourc}(2983)
+           │               ├─gcr-ssh-agent(2813)─┬─{gcr-ssh-agent}(2818)
+           │               │
+
+Adrian, [11/23/2024 6:36 PM]
+└─{gcr-ssh-agent}(2819)
+           │               ├─gjs(2994)─┬─{gjs}(2997)
+           │               │           ├─{gjs}(2998)
+           │               │           ├─{gjs}(2999)
+           │               │           ├─{gjs}(3001)
+           │               │           ├─{gjs}(3002)
+           │               │           ├─{gjs}(3003)
+           │               │           ├─{gjs}(3004)
+           │               │           ├─{gjs}(3005)
+           │               │           ├─{gjs}(3006)
+           │               │           ├─{gjs}(3008)
+           │               │           └─{gjs}(3009)
+           │               ├─gjs(3324)─┬─{gjs}(3328)
+           │               │           ├─{gjs}(3329)
+           │               │           ├─{gjs}(3330)
+           │               │           ├─{gjs}(3331)
+           │               │           ├─{gjs}(3332)
+           │               │           ├─{gjs}(3333)
+           │               │           ├─{gjs}(3334)
+           │               │           ├─{gjs}(3335)
+           │               │           ├─{gjs}(3336)
+           │               │           ├─{gjs}(3337)
+           │               │           └─{gjs}(3338)
+           │               ├─gnome-keyring-d(2489)─┬─{gnome-keyring-d}(2500)
+           │               │                       ├─{gnome-keyring-d}(2501)
+           │               │                       ├─{gnome-keyring-d}(2506)
+           │               │                       └─{gnome-keyring-d}(2508)
+           │               ├─gnome-session-b(2839)─┬─evolution-alarm(3092)─┬─{e+
+           │               │                       │                       ├─{e+
+           │               │                       │                       ├─{e+
+           │               │                       │                       ├─{e+
+           │               │                       │                       ├─{e+
+           │               │                       │                       ├─{e+
+           │               │                       │                       └─{e+
+           │               │                       ├─gsd-disk-utilit(3065)─┬─{g+
+           │               │                       │                       ├─{g+
+           │               │                       │                       └─{g+
+           │               │                       ├─update-notifier(5133)─┬─{u+
+           │               │                       │                       ├─{u+
+           │               │                       │                       ├─{u+
+           │               │                       │                       ├─{u+
+           │               │                       │                       └─{u+
+           │               │                       ├─{gnome-session-b}(2847)
+           │               │                       ├─{gnome-session-b}(2848)
+           │               │                       ├─{gnome-session-b}(2850)
+           │               │                       └─{gnome-session-b}(2852)
+           │               ├─gnome-session-c(2814)───{gnome-session-c}(2820)
+           │               ├─gnome-shell(2883)─┬─firefox(3608)─┬─Isolated Servi+
+           │               │                   │               ├─Isolated Servi+
+           │               │                   │               ├─Isolated Web C+
+           │               │                   │               ├─Isolated Web C+
+           │               │                   │               ├─Isolated Web C+
+           │               │                   │               ├─Isolated Web C+
+           │               │                   │               ├─Isolated Web C+
+           │               │                   │               ├─Isolated Web C+
+           │               │                   │               ├─Isolated Web C+
+           │               │                   │               ├─Isolated Web C+
+           │               │                   │               ├─Isolated Web C+
+           │               │                   │               ├─Privileged Con+
+           │
+
+Adrian, [11/23/2024 6:36 PM]
+│
+
+Adrian, [11/23/2024 6:36 PM]
+│                   │               ├─RDD Process(77+
+           │               │                   │               ├─Socket Process+
+           │               │                   │               ├─Utility Proces+
+           │               │                   │               ├─Web Content(12+
+           │               │                   │               ├─Web Content(12+
+           │               │                   │               ├─Web Content(12+
+           │               │                   │               ├─WebExtensions(+
+           │               │                   │               ├─file:// Conten+
+           │               │                   │               ├─{firefox}(3732+
+           │               │                   │               ├─{firefox}(3921+
+           │               │                   │               ├─{firefox}(3922+
+           │               │                   │               ├─{firefox}(3923+
+           │               │                   │               ├─{firefox}(3925+
+           │               │                   │               ├─{firefox}(3927+
+           │               │                   │               ├─{firefox}(3928+
+           │               │                   │               ├─{firefox}(3929+
+           │               │                   │               ├─{firefox}(3930+
+           │               │                   │               ├─{firefox}(3931+
+           │               │                   │               ├─{firefox}(3933+
+           │               │                   │               ├─{firefox}(3934+
+           │               │                   │               ├─{firefox}(3935+
+           │               │                   │               ├─{firefox}(3936+
+           │               │                   │               ├─{firefox}(3937+
+           │               │                   │               ├─{firefox}(3938+
+           │               │                   │               ├─{firefox}(3942+
+           │               │                   │               ├─{firefox}(3954+
+           │               │                   │               ├─{firefox}(3955+
+           │               │                   │               ├─{firefox}(3957+
+           │               │                   │               ├─{firefox}(3958+
+           │               │                   │               ├─{firefox}(3959+
+           │               │                   │               ├─{firefox}(3960+
+           │               │                   │               ├─{firefox}(3961+
+           │               │                   │               ├─{firefox}(3962+
+           │               │                   │               ├─{firefox}(3963+
+           │               │                   │               ├─{firefox}(3964+
+           │               │                   │               ├─{firefox}(3967+
+           │               │                   │               ├─{firefox}(3994+
+           │               │                   │               ├─{firefox}(3995+
+           │               │                   │               ├─{firefox}(3996+
+           │               │                   │               ├─{firefox}(3997+
+           │               │                   │               ├─{firefox}(3998+
+           │               │                   │               ├─{firefox}(3999+
+           │               │                   │               ├─{firefox}(4000+
+           │               │                   │               ├─{firefox}(4001+
+           │               │                   │               ├─{firefox}(4002+
+           │               │                   │               ├─{firefox}(4003+
+           │               │                   │               ├─{firefox}(4004+
+           │               │                   │               ├─{firefox}(4005+
+           │               │                   │               ├─{firefox}(4006+
+           │               │                   │               ├─{firefox}(4007+
+           │               │                   │
+
+Adrian, [11/23/2024 6:36 PM]
+├─{firefox}(4008+
+           │               │                   │               ├─{firefox}(4010+
+           │               │                   │               ├─{firefox}(4011+
+           │               │                   │               ├─{firefox}(4025+
+           │               │                   │               ├─{firefox}(4026+
+           │               │                   │               ├─{firefox}(4027+
+           │               │                   │               ├─{firefox}(4028+
+           │               │                   │               ├─{firefox}(4029+
+           │               │                   │               ├─{firefox}(4031+
+           │               │                   │               ├─{firefox}(4032+
+           │               │                   │               ├─{firefox}(4033+
+           │               │                   │               ├─{firefox}(4034+
+           │               │                   │               ├─{firefox}(4037+
+           │               │                   │               ├─{firefox}(4039+
+           │               │                   │               ├─{firefox}(4046+
+           │               │                   │               ├─{firefox}(4047+
+           │               │                   │               ├─{firefox}(4048+
+           │               │                   │               ├─{firefox}(4049+
+           │               │                   │               ├─{firefox}(4050+
+           │               │                   │               ├─{firefox}(4051+
+           │               │                   │               ├─{firefox}(4052+
+           │               │                   │               ├─{firefox}(4057+
+           │               │                   │               ├─{firefox}(4064+
+           │               │                   │               ├─{firefox}(4065+
+           │               │                   │               ├─{firefox}(4066+
+           │               │                   │               ├─{firefox}(4215+
+           │               │                   │               ├─{firefox}(4222+
+           │               │                   │               ├─{firefox}(4223+
+           │               │                   │               ├─{firefox}(4224+
+           │               │                   │               ├─{firefox}(4226+
+           │               │                   │               ├─{firefox}(4227+
+           │               │                   │               ├─{firefox}(4231+
+           │               │                   │               ├─{firefox}(4232+
+           │               │                   │               ├─{firefox}(4233+
+           │               │                   │               ├─{firefox}(4247+
+           │               │                   │               ├─{firefox}(4248+
+           │               │                   │               ├─{firefox}(4249+
+           │               │                   │               ├─{firefox}(4257+
+           │               │                   │               ├─{firefox}(4259+
+           │               │                   │               ├─{firefox}(4428+
+           │               │                   │               ├─{firefox}(4429+
+           │               │                   │               ├─{firefox}(4449+
+           │               │                   │               ├─{firefox}(4465+
+           │               │                   │               ├─{firefox}(4659+
+           │               │                   │               ├─{firefox}(4663+
+           │               │                   │               ├─{firefox}(4666+
+           │               │                   │               ├─{firefox}(4822+
+           │               │                   │               ├─{firefox}(4825+
+           │               │                   │               ├─{firefox}(4829+
+           │               │                   │               ├─{firefox}(4832+
+           │               │                   │               ├─{firefox}(4853+
+           │
+
+Adrian, [11/23/2024 6:36 PM]
+│
+
+Adrian, [11/23/2024 6:36 PM]
+│                   │               ├─{firefox}(4854+
+           │               │                   │               ├─{firefox}(4871+
+           │               │                   │               ├─{firefox}(4876+
+           │               │                   │               ├─{firefox}(4880+
+           │               │                   │               ├─{firefox}(4898+
+           │               │                   │               ├─{firefox}(4919+
+           │               │                   │               ├─{firefox}(4977+
+           │               │                   │               ├─{firefox}(4981+
+           │               │                   │               ├─{firefox}(5005+
+           │               │                   │               ├─{firefox}(5008+
+           │               │                   │               ├─{firefox}(5063+
+           │               │                   │               ├─{firefox}(7767+
+           │               │                   │               ├─{firefox}(7774+
+           │               │                   │               ├─{firefox}(8703+
+           │               │                   │               ├─{firefox}(8707+
+           │               │                   │               ├─{firefox}(8945+
+           │               │                   │               ├─{firefox}(8973+
+           │               │                   │               ├─{firefox}(8988+
+           │               │                   │               ├─{firefox}(9023+
+           │               │                   │               ├─{firefox}(9024+
+           │               │                   │               ├─{firefox}(9031+
+           │               │                   │               ├─{firefox}(9032+
+           │               │                   │               ├─{firefox}(9033+
+           │               │                   │               ├─{firefox}(9034+
+           │               │                   │               ├─{firefox}(9035+
+           │               │                   │               ├─{firefox}(9036+
+           │               │                   │               ├─{firefox}(9037+
+           │               │                   │               ├─{firefox}(9911+
+           │               │                   │               ├─{firefox}(1174+
+           │               │                   │               ├─{firefox}(1174+
+           │               │                   │               ├─{firefox}(1201+
+           │               │                   │               ├─{firefox}(1234+
+           │               │                   │               ├─{firefox}(1247+
+           │               │                   │               ├─{firefox}(1252+
+           │               │                   │               ├─{firefox}(1270+
+           │               │                   │               ├─{firefox}(1277+
+           │               │                   │               ├─{firefox}(1283+
+           │               │                   │               ├─{firefox}(1295+
+           │               │                   │               └─{firefox}(1295+
+           │               │                   ├─gjs(11658)─┬─{gjs}(11662)
+           │               │                   │            ├─{gjs}(11663)
+           │               │                   │            ├─{gjs}(11664)
+           │               │                   │            ├─{gjs}(11665)
+           │               │                   │            ├─{gjs}(11666)
+           │               │                   │            ├─{gjs}(11667)
+           │               │                   │            ├─{gjs}(11668)
+           │               │                   │            ├─{gjs}(11669)
+           │               │                   │            ├─{gjs}(11670)
+           │               │                   │            ├─{gjs}(11671)
+           │               │                   │            ├─{gjs}(11672)
+           │               │                   │            ├─{gjs}(11685)
+           │               │                   │
+
+Adrian, [11/23/2024 6:36 PM]
+└─{gjs}(11704)
+           │               │                   ├─mutter-x11-fram(2935)─┬─{mutte+
+           │               │                   │                       ├─{mutte+
+           │               │                   │                       ├─{mutte+
+           │               │                   │                       ├─{mutte+
+           │               │                   │                       ├─{mutte+
+           │               │                   │                       ├─{mutte+
+           │               │                   │                       ├─{mutte+
+           │               │                   │                       ├─{mutte+
+           │               │                   │                       └─{mutte+
+           │               │                   ├─{gnome-shell}(2885)
+           │               │                   ├─{gnome-shell}(2886)
+           │               │                   ├─{gnome-shell}(2888)
+           │               │                   ├─{gnome-shell}(2889)
+           │               │                   ├─{gnome-shell}(2890)
+           │               │                   ├─{gnome-shell}(2891)
+           │               │                   ├─{gnome-shell}(2892)
+           │               │                   ├─{gnome-shell}(2893)
+           │               │                   ├─{gnome-shell}(2894)
+           │               │                   ├─{gnome-shell}(2895)
+           │               │                   ├─{gnome-shell}(2896)
+           │               │                   ├─{gnome-shell}(2897)
+           │               │                   ├─{gnome-shell}(2918)
+           │               │                   ├─{gnome-shell}(2919)
+           │               │                   ├─{gnome-shell}(2931)
+           │               │                   ├─{gnome-shell}(2932)
+           │               │                   ├─{gnome-shell}(2934)
+           │               │                   └─{gnome-shell}(3384)
+           │               ├─gnome-shell-cal(2970)─┬─{gnome-shell-cal}(2971)
+           │               │                       ├─{gnome-shell-cal}(2972)
+           │               │                       ├─{gnome-shell-cal}(2974)
+           │               │                       ├─{gnome-shell-cal}(2975)
+           │               │                       ├─{gnome-shell-cal}(2976)
+           │               │                       └─{gnome-shell-cal}(3134)
+           │               ├─gnome-terminal-(10340)─┬─bash(10353)───pstree(1298+
+           │               │                        ├─{gnome-terminal-}(10341)
+           │               │                        ├─{gnome-terminal-}(10342)
+           │               │                        ├─{gnome-terminal-}(10343)
+           │               │                        ├─{gnome-terminal-}(10344)
+           │               │                        ├─{gnome-terminal-}(10347)
+           │               │                        └─{gnome-terminal-}(10352)
+           │               ├─goa-daemon(3010)─┬─{goa-daemon}(3024)
+           │               │                  ├─{goa-daemon}(3025)
+           │               │                  ├─{goa-daemon}(3047)
+           │               │                  └─{goa-daemon}(3052)
+           │               ├─goa-identity-se(3057)─┬─{goa-identity-se}(3088)
+           │               │                       ├─{goa-identity-se}(3089)
+           │               │                       └─{goa-identity-se}(3158)
+           │               ├─gsd-a11y-settin(3016)─┬─{gsd-a11y-settin}(3048)
+           │               │                       ├─{gsd-a11y-settin}(3050)
+           │               │                       ├─{gsd-a11y-settin}(3061)
+           │               │                       └─{gsd-a11y-settin}(3132)
+           │               ├─gsd-color(3017)─┬─{gsd-color}(3142)
+           │               │                 ├─{gsd-color}(3147)
+           │               │                 ├─{gsd-color}(3148)
+           │               │                 └─{gsd-color}(3170)
+           │
+
+Adrian, [11/23/2024 6:36 PM]
+├─gsd-datetime(3018)─┬─{gsd-datetime}(3135)
+           │               │                    ├─{gsd-datetime}(3137)
+           │               │                    ├─{gsd-datetime}(3167)
+           │               │                    └─{gsd-datetime}(3202)
+           │               ├─gsd-housekeepin(3022)─┬─{gsd-housekeepin}(3058)
+           │               │                       ├─{gsd-housekeepin}(3059)
+           │               │                       ├─{gsd-housekeepin}(3077)
+           │               │                       └─{gsd-housekeepin}(3131)
+           │               ├─gsd-keyboard(3023)─┬─{gsd-keyboard}(3118)
+           │               │                    ├─{gsd-keyboard}(3119)
+           │               │                    ├─{gsd-keyboard}(3120)
+           │               │                    └─{gsd-keyboard}(3155)
+           │               ├─gsd-media-keys(3026)─┬─{gsd-media-keys}(3156)
+           │               │                      ├─{gsd-media-keys}(3157)
+           │               │                      ├─{gsd-media-keys}(3159)
+           │               │                      └─{gsd-media-keys}(3208)
+           │               ├─gsd-power(3033)─┬─{gsd-power}(3160)
+           │               │                 ├─{gsd-power}(3161)
+           │               │                 ├─{gsd-power}(3177)
+           │               │                 ├─{gsd-power}(3256)
+           │               │                 └─{gsd-power}(6166)
+           │               ├─gsd-print-notif(3034)─┬─{gsd-print-notif}(3106)
+           │               │                       ├─{gsd-print-notif}(3107)
+           │               │                       └─{gsd-print-notif}(3152)
+           │               ├─gsd-printer(3222)─┬─{gsd-printer}(3244)
+           │               │                   ├─{gsd-printer}(3245)
+           │               │                   └─{gsd-printer}(3246)
+           │               ├─gsd-rfkill(3038)─┬─{gsd-rfkill}(3070)
+           │               │                  ├─{gsd-rfkill}(3075)
+           │               │                  └─{gsd-rfkill}(3091)
+           │               ├─gsd-screensaver(3042)─┬─{gsd-screensaver}(3063)
+           │               │                       ├─{gsd-screensaver}(3064)
+           │               │                       └─{gsd-screensaver}(3101)
+           │               ├─gsd-sharing(3046)─┬─{gsd-sharing}(3126)
+           │               │                   ├─{gsd-sharing}(3129)
+           │               │                   ├─{gsd-sharing}(3130)
+           │               │                   └─{gsd-sharing}(3166)
+           │               ├─gsd-smartcard(3049)─┬─{gsd-smartcard}(3116)
+           │               │                     ├─{gsd-smartcard}(3117)
+           │               │                     ├─{gsd-smartcard}(3154)
+           │               │                     └─{gsd-smartcard}(3197)
+           │               ├─gsd-sound(3051)─┬─{gsd-sound}(3112)
+           │               │                 ├─{gsd-sound}(3113)
+           │               │                 ├─{gsd-sound}(3150)
+           │               │                 └─{gsd-sound}(3194)
+           │               ├─gsd-wacom(3054)─┬─{gsd-wacom}(3165)
+           │               │                 ├─{gsd-wacom}(3200)
+           │               │                 └─{gsd-wacom}(3207)
+           │               ├─gsd-xsettings(3055)─┬─{gsd-xsettings}(3140)
+           │               │                     ├─{gsd-xsettings}(3141)
+           │               │                     ├─{gsd-xsettings}(3168)
+           │               │                     └─{gsd-xsettings}(3204)
+           │               ├─gvfs-afc-volume(3294)─┬─{gvfs-afc-volume}(3298)
+           │               │                       ├─{gvfs-afc-volume}(3299)
+           │               │                       ├─{gvfs-afc-volume}(3300)
+           │               │                       └─{gvfs-afc-volume}(3303)
+           │               ├─gvfs-goa-volume(3314)─┬─{gvfs-goa-volume}(3315)
+           │               │
+
+Adrian, [11/23/2024 6:36 PM]
+├─{gvfs-goa-volume}(3316)
+           │               │                       └─{gvfs-goa-volume}(3317)
+           │               ├─gvfs-gphoto2-vo(3279)─┬─{gvfs-gphoto2-vo}(3285)
+           │               │                       ├─{gvfs-gphoto2-vo}(3286)
+           │               │                       └─{gvfs-gphoto2-vo}(3288)
+           │               ├─gvfs-mtp-volume(3309)─┬─{gvfs-mtp-volume}(3310)
+           │               │                       ├─{gvfs-mtp-volume}(3311)
+           │               │                       └─{gvfs-mtp-volume}(3313)
+           │               ├─gvfs-udisks2-vo(3219)─┬─{gvfs-udisks2-vo}(3230)
+           │               │                       ├─{gvfs-udisks2-vo}(3233)
+           │               │                       ├─{gvfs-udisks2-vo}(3238)
+           │               │                       └─{gvfs-udisks2-vo}(3263)
+           │               ├─gvfsd(2828)─┬─gvfsd-dnssd(9107)─┬─{gvfsd-dnssd}(91+
+           │               │             │                   ├─{gvfsd-dnssd}(91+
+           │               │             │                   └─{gvfsd-dnssd}(91+
+           │               │             ├─gvfsd-network(9092)─┬─{gvfsd-network+
+           │               │             │                     ├─{gvfsd-network+
+           │               │             │                     ├─{gvfsd-network+
+           │               │             │                     └─{gvfsd-network+
+           │               │             ├─gvfsd-trash(3404)─┬─{gvfsd-trash}(34+
+           │               │             │                   ├─{gvfsd-trash}(34+
+           │               │             │                   ├─{gvfsd-trash}(34+
+           │               │             │                   └─{gvfsd-trash}(34+
+           │               │             ├─{gvfsd}(2831)
+           │               │             ├─{gvfsd}(2832)
+           │               │             └─{gvfsd}(2833)
+           │               ├─gvfsd-fuse(2836)─┬─{gvfsd-fuse}(2840)
+           │               │                  ├─{gvfsd-fuse}(2841)
+           │               │                  ├─{gvfsd-fuse}(2842)
+           │               │                  ├─{gvfsd-fuse}(2843)
+           │               │                  ├─{gvfsd-fuse}(2845)
+           │               │                  └─{gvfsd-fuse}(2846)
+           │               ├─gvfsd-metadata(3544)─┬─{gvfsd-metadata}(3549)
+           │               │                      ├─{gvfsd-metadata}(3550)
+           │               │                      └─{gvfsd-metadata}(3551)
+           │               ├─ibus-daemon(3014)─┬─ibus-engine-sim(3346)─┬─{ibus-+
+           │               │                   │                       ├─{ibus-+
+           │               │                   │                       └─{ibus-+
+           │               │                   ├─ibus-extension-(3174)─┬─{ibus-+
+           │               │                   │                       ├─{ibus-+
+           │               │                   │                       ├─{ibus-+
+           │               │                   │                       └─{ibus-+
+           │               │                   ├─ibus-memconf(3172)─┬─{ibus-mem+
+           │               │                   │                    ├─{ibus-mem+
+           │               │                   │                    └─{ibus-mem+
+           │               │                   ├─{ibus-daemon}(3030)
+           │               │                   ├─{ibus-daemon}(3031)
+           │               │                   └─{ibus-daemon}(3043)
+           │               ├─ibus-portal(3184)─┬─{ibus-portal}(3189)
+           │               │                   ├─{ibus-portal}(3190)
+           │               │                   └─{ibus-portal}(3203)
+           │               ├─ibus-x11(3179)─┬─{ibus-x11}(3217)
+           │               │                ├─{ibus-x11}(3218)
+           │               │                └─{ibus-x11}(3232)
+           │               ├─pipewire(2481)─┬─{pipewire}(2516)
+           │               │
+
+Adrian, [11/23/2024 6:36 PM]
+└─{pipewi
+
+Adrian, [11/23/2024 6:36 PM]
+re}(2520)
+           │               ├─pipewire(2483)─┬─{pipewire}(2517)
+           │               │                └─{pipewire}(2518)
+           │               ├─pipewire-pulse(2488)─┬─{pipewire-pulse}(2515)
+           │               │                      └─{pipewire-pulse}(2524)
+           │               ├─snap(4264)─┬─{snap}(4265)
+           │               │            ├─{snap}(4266)
+           │               │            ├─{snap}(4267)
+           │               │            ├─{snap}(4268)
+           │               │            ├─{snap}(4269)
+           │               │            ├─{snap}(4270)
+           │               │            ├─{snap}(4271)
+           │               │            ├─{snap}(4272)
+           │               │            ├─{snap}(4273)
+           │               │            ├─{snap}(4274)
+           │               │            ├─{snap}(4275)
+           │               │            └─{snap}(4276)
+           │               ├─snapd-desktop-i(2742)───snapd-desktop-i(2810)─┬─{s+
+           │               │                                               ├─{s+
+           │               │                                               ├─{s+
+           │               │                                               ├─{s+
+           │               │                                               ├─{s+
+           │               │                                               ├─{s+
+           │               │                                               ├─{s+
+           │               │                                               ├─{s+
+           │               │                                               ├─{s+
+           │               │                                               ├─{s+
+           │               │                                               ├─{s+
+           │               │                                               └─{s+
+           │               ├─tracker-miner-f(3340)─┬─{tracker-miner-f}(3343)
+           │               │                       ├─{tracker-miner-f}(3344)
+           │               │                       ├─{tracker-miner-f}(3345)
+           │               │                       ├─{tracker-miner-f}(3357)
+           │               │                       ├─{tracker-miner-f}(3358)
+           │               │                       ├─{tracker-miner-f}(3368)
+           │               │                       └─{tracker-miner-f}(3369)
+           │               ├─wireplumber(2487)─┬─{wireplumber}(2519)
+           │               │                   ├─{wireplumber}(2522)
+           │               │                   ├─{wireplumber}(2523)
+           │               │                   ├─{wireplumber}(2529)
+           │               │                   └─{wireplumber}(2534)
+           │               ├─xdg-desktop-por(3429)─┬─{xdg-desktop-por}(3430)
+           │               │                       ├─{xdg-desktop-por}(3431)
+           │               │                       ├─{xdg-desktop-por}(3432)
+           │               │                       ├─{xdg-desktop-por}(3489)
+           │               │                       ├─{xdg-desktop-por}(3542)
+           │               │                       └─{xdg-desktop-por}(3543)
+           │               ├─xdg-desktop-por(3434)─┬─{xdg-desktop-por}(3435)
+           │               │                       ├─{xdg-desktop-por}(3436)
+           │               │                       ├─{xdg-desktop-por}(3437)
+           │               │                       ├─{xdg-desktop-por}(3440)
+           │               │                       ├─{xdg-desktop-por}(3441)
+           │               │                       ├─{xdg-desktop-por}(3442)
+           │               │                       ├─{xdg-desktop-por}(3443)
+           │               │                       ├─{xdg-desktop-por}(3444)
+           │               │                       └─{xdg-desktop-por}(3446)
+           │               ├─xdg-desktop-por(3498)─┬─{xdg-desktop-por}(3521)
+           │               │                       ├─{xdg-desk
+
+Adrian, [11/23/2024 6:36 PM]
+top-por}(3522)
+           │               │                       ├─{xdg-desktop-por}(3525)
+           │               │                       └─{xdg-desktop-por}(3540)
+           │               ├─xdg-document-po(2525)─┬─fusermount3(2546)
+           │               │                       ├─{xdg-document-po}(2530)
+           │               │                       ├─{xdg-document-po}(2531)
+           │               │                       ├─{xdg-document-po}(2535)
+           │               │                       ├─{xdg-document-po}(2545)
+           │               │                       ├─{xdg-document-po}(2547)
+           │               │                       └─{xdg-document-po}(2548)
+           │               └─xdg-permission-(2537)─┬─{xdg-permission-}(2540)
+           │                                       ├─{xdg-permission-}(2541)
+           │                                       └─{xdg-permission-}(2543)
+           ├─systemd-journal(361)
+           ├─systemd-logind(985)
+           ├─systemd-oomd(884)
+           ├─systemd-resolve(885)
+           ├─systemd-timesyn(890)───{systemd-timesyn}(949)
+           ├─systemd-udevd(398)
+           ├─thermald(995)─┬─{thermald}(1019)
+           │               ├─{thermald}(1020)
+           │               ├─{thermald}(1024)
+           │               └─{thermald}(1031)
+           ├─udisksd(997)─┬─{udisksd}(1013)
+           │              ├─{udisksd}(1017)
+           │              ├─{udisksd}(1025)
+           │              ├─{udisksd}(1232)
+           │              ├─{udisksd}(1342)
+           │              └─{udisksd}(12968)
+           ├─unattended-upgr(1669)───{unattended-upgr}(1721)
+           ├─upowerd(2135)─┬─{upowerd}(2222)
+           │               ├─{upowerd}(2223)
+           │               └─{upowerd}(2228)
+           └─wpa_supplicant(1004)

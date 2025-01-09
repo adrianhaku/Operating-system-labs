@@ -1,0 +1,37 @@
+ adrian@adrian-TM1703:~$ uname -a
+Linux adrian-TM1703 6.8.0-48-generic #48-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep 27 14:04:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+adrian@adrian-TM1703:~$ mkdir ~/students
+adrian@adrian-TM1703:~$ mkdir ~/mentors
+adrian@adrian-TM1703:~$ touch ~/students/students_list.txt
+adrian@adrian-TM1703:~$ touch ~/mentors/mentors_list.txt
+adrian@adrian-TM1703:~$ nano ~/students/students_list.txt
+adrian@adrian-TM1703:~$ nano ~/mentors/mentors_list.txt
+adrian@adrian-TM1703:~$ mv ~/mentors/mentors_list.txt ~/students
+adrian@adrian-TM1703:~$ rmdir mentors
+adrian@adrian-TM1703:~$  mv students students_and_mentors
+adrian@adrian-TM1703:~$ rm -r students_and_mentor
+likola@likola-HP-Laptop-15s-fq2xxx:~$ ssh adrian@192.168.1.109
+adrian@192.168.1.109's password: 
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.8.0-48-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+12 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+10 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+Last login: Thu Nov 14 15:09:08 2024 from 192.168.1.110
+adrian@adrian-TM1703:~$ ls
+adrian.pub  file3                                    Music            snap
+Desktop     fileA                                    Pictures         Templates
+Documents   fileB                                    Public           Videos
+Downloads   google-chrome-stable_current_x86_64.rpm  PycharmProjects
+adrian@adrian-TM1703:~$ exit
+logout
+Connection to 192.168.1.109 closed.

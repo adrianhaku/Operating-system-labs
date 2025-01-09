@@ -1,0 +1,29 @@
+adrian@adrian-TM1703:~$ echo "This is a test file." > testfile.txt
+adrian@adrian-TM1703:~$ ls -l | cut -d ' ' -f 1 | sort | uniq
+drwx------
+drwxrwxr-x
+drwxr-xr-x
+lrwxrwxrwx
+-r--r--r--
+-rw-r--r--
+-rw-rw-r--
+total
+adrian@adrian-TM1703:~$ ^C
+adrian@adrian-TM1703:~$  sudo nano /etc/ssh/sshd_config
+[sudo] password for adrian: 
+adrian@adrian-TM1703:~$ sudo systemctl restart sshd
+adrian@adrian-TM1703:~$  sudo nano /etc/ssh/sshd_config
+adrian@adrian-TM1703:~$ sudo systemctl reload sshd
+adrian@adrian-TM1703:~$ cat > myfile.txt
+local
+simple code 
+shy
+aaaaa
+aaaaa
+aaaaaa
+aaaaaaa
+aaaaaa
+aaaaaa
+aaaaaaa
+aaaaaa
+aaaaaaa

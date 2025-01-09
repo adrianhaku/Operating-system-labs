@@ -1,0 +1,48 @@
+﻿# Информация об ОС (Пункт 1)
+drian@adrian-TM1703:~$ uname -a
+Linux adrian-TM1703 6.8.0-48-generic #48-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep 27 14:04:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
+
+# Пункт 2
+# 1. Создать каталоги students и mentors в домашней директории, а в них — текстовые 
+файлы students_list.txt и mentors_list.txt соответственно.
+
+
+# 2. Открыть созданные в п.1 файлы в любом текстовом редакторе и заполнить их (в 
+соответствии с названием) списком Ваших одногруппников и наставников на 
+данном потоке.
+# 3. Переместите файл mentors_list.txt в папку students.
+
+
+# 3. Переместите файл mentors_list.txt в папку students.
+
+
+# 4. Удалите папку mentors
+
+
+# 5. Переименуйте папку students в students_and_mentors.
+
+
+# 6. Удалите папку students_and_mentors вместе с содержимым.
+
+
+Code:
+adrian@adrian-TM1703:~$ uname -a
+ 
+adrian@adrian-TM1703:~$ uname -a
+Linux adrian-TM1703 6.8.0-48-generic #48-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep 27 14:04:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+adrian@adrian-TM1703:~$ mkdir ~/students
+adrian@adrian-TM1703:~$ mkdir ~/mentors
+adrian@adrian-TM1703:~$ touch ~/students/students_list.txt
+adrian@adrian-TM1703:~$ touch ~/mentors/mentors_list.txt
+adrian@adrian-TM1703:~$ nano ~/students/students_list.txt
+adrian@adrian-TM1703:~$ nano ~/mentors/mentors_list.txt
+adrian@adrian-TM1703:~$ mv ~/mentors/mentors_list.txt ~/students
+adrian@adrian-TM1703:~$ rmdir mentors
+adrian@adrian-TM1703:~$  mv students students_and_mentors
+adrian@adrian-TM1703:~$ rm -r students_and_mentors
+  
+
+
+
+# 7. Подключитесь к машине с Linux по протоколу SSH.

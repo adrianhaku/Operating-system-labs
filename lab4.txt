@@ -1,0 +1,42 @@
+adrian@adrian-TM1703:~$ echo "this is some arbitrary content">file1
+adrian@adrian-TM1703:~$ cp file1 file2
+adrian@adrian-TM1703:~$ ln -s file1 file3
+adrian@adrian-TM1703:~$ ln file1 file4
+adrian@adrian-TM1703:~$ ls -i file1 file2 file3 file4
+1183440 file1  1183788 file2  1183794 file3  1183440 file4
+adrian@adrian-TM1703:~$ rm file1
+adrian@adrian-TM1703:~$ cat file1
+cat: file1: No such file or directory
+adrian@adrian-TM1703:~$ cat file2
+this is some arbitrary content
+adrian@adrian-TM1703:~$ cat file3
+cat: file3: No such file or directory
+adrian@adrian-TM1703:~$ cat file4
+this is some arbitrary content
+adrian@adrian-TM1703:~$ mv file2 new_file2
+adrian@adrian-TM1703:~$ mv file4 new_file4
+adrian@adrian-TM1703:~$ ln new_file4 new_file3
+adrian@adrian-TM1703:~$ mv new_file3 /tmp/
+adrian@adrian-TM1703:~$ echo "content of file A" > fileA
+adrian@adrian-TM1703:~$ echo "content of file B"> fileB
+adrian@adrian-TM1703:~$ chmod 664 fileA
+adrian@adrian-TM1703:~$ chmod 444
+chmod: missing operand after ‘444’
+Try 'chmod --help' for more information.
+adrian@adrian-TM1703:~$ chmod 444 fileB
+adrian@adrian-TM1703:~$ ln -l fileA fileB
+ln: invalid option -- 'l'
+Try 'ln --help' for more information.
+adrian@adrian-TM1703:~$ ls -l fileA fileB
+-rw-rw-r-- 1 adrian adrian 18 Nov 11 16:30 fileA
+-r--r--r-- 1 adrian adrian 18 Nov 11 16:30 fileB
+adrian@adrian-TM1703:~$ ls -l file1 file2 file3 file4 new_file2 new_file4 fileA fileB
+ls: cannot access 'file1': No such file or directory
+ls: cannot access 'file2': No such file or directory
+ls: cannot access 'file4': No such file or directory
+lrwxrwxrwx 1 adrian adrian  5 Nov 11 16:21 file3 -> file1
+-rw-rw-r-- 1 adrian adrian 18 Nov 11 16:30 fileA
+-r--r--r-- 1 adrian adrian 18 Nov 11 16:30 fileB
+-rw-rw-r-- 1 adrian adrian 31 Nov 11 16:20 new_file2
+-rw-rw-r-- 2 adrian adrian 31 Nov 11 16:19 new_file4
+adrian@adrian-TM1703:~$

@@ -1,0 +1,220 @@
+adrian@adrian-TM1703:~$ sudo apt-get update && sudo apt-get upgrade -y
+[sudo] password for adrian: 
+Get:1 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:2 https://dl.google.com/linux/chrome/deb stable InRelease [1,825 B]        
+Get:3 https://download.docker.com/linux/ubuntu noble InRelease [48.8 kB]       
+Hit:4 http://archive.ubuntu.com/ubuntu noble InRelease                         
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]        
+Get:6 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:7 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,219 B]
+Ign:8 https://packages.icinga.com/ubuntu icinga-bullseye InRelease             
+Err:9 https://packages.icinga.com/ubuntu icinga-bullseye Release
+  404  Not Found [IP: 185.233.189.126 443]
+Get:10 http://security.ubuntu.com/ubuntu noble-security/main Sources [137 kB]
+Get:11 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [572 kB]
+Get:12 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [111 kB]
+Get:13 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [7,220 B]
+Get:14 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:15 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [795 kB]
+Get:16 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [169 kB]
+Get:17 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [52.0 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main Sources [326 kB]    
+Get:19 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [761 kB]
+Get:20 http://archive.ubuntu.com/ubuntu noble-updates/main Translation-en [173 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [151 kB]
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:23 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [965 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [238 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [309 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:27 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [212 B]
+Get:28 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [208 B]
+Get:29 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:30 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [11.7 kB]
+Get:31 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Reading package lists... Done                    
+E: The repository 'https://packages.icinga.com/ubuntu icinga-bullseye Release' does not have a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+W: https://download.docker.com/linux/ubuntu/dists/noble/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+adrian@adrian-TM1703:~$ sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+apt-transport-https is already the newest version (2.7.14build2).
+ca-certificates is already the newest version (20240203).
+software-properties-common is already the newest version (0.99.49.1).
+The following additional packages will be installed:
+  libcurl3t64-gnutls libcurl4t64
+The following packages will be upgraded:
+  curl libcurl3t64-gnutls libcurl4t64
+3 upgraded, 0 newly installed, 0 to remove and 103 not upgraded.
+Need to get 0 B/901 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+(Reading database ... 200179 files and directories currently installed.)
+Preparing to unpack .../curl_8.5.0-2ubuntu10.6_amd64.deb ...
+Unpacking curl (8.5.0-2ubuntu10.6) over (8.5.0-2ubuntu10.5) ...
+Preparing to unpack .../libcurl4t64_8.5.0-2ubuntu10.6_amd64.deb ...
+Unpacking libcurl4t64:amd64 (8.5.0-2ubuntu10.6) over (8.5.0-2ubuntu10.5) ...
+Preparing to unpack .../libcurl3t64-gnutls_8.5.0-2ubuntu10.6_amd64.deb ...
+Unpacking libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.6) over (8.5.0-2ubuntu10.5) ...
+Setting up libcurl4t64:amd64 (8.5.0-2ubuntu10.6) ...
+Setting up libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.6) ...
+Setting up curl (8.5.0-2ubuntu10.6) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.3) ...
+adrian@adrian-TM1703:~$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+OK
+adrian@adrian-TM1703:~$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+Repository: 'deb [arch=amd64] https://download.docker.com/linux/ubuntu noble stable'
+Description:
+Archive for codename: noble components: stable
+More info: https://download.docker.com/linux/ubuntu
+Adding repository.
+Press [ENTER] to continue or Ctrl-c to cancel.
+Found existing deb entry in /etc/apt/sources.list.d/archive_uri-https_download_docker_com_linux_ubuntu-noble.list
+Adding deb entry to /etc/apt/sources.list.d/archive_uri-https_download_docker_com_linux_ubuntu-noble.list
+Found existing deb-src entry in /etc/apt/sources.list.d/archive_uri-https_download_docker_com_linux_ubuntu-noble.list
+Adding disabled deb-src entry to /etc/apt/sources.list.d/archive_uri-https_download_docker_com_linux_ubuntu-noble.list
+Hit:1 https://download.docker.com/linux/ubuntu noble InRelease
+Hit:2 http://security.ubuntu.com/ubuntu noble-security InRelease                                                                                                                             
+Hit:3 https://dl.google.com/linux/chrome/deb stable InRelease                                                                                                                                
+Hit:4 http://archive.ubuntu.com/ubuntu noble InRelease                                                                                               
+Ign:5 https://packages.icinga.com/ubuntu icinga-bullseye InRelease
+Err:6 https://packages.icinga.com/ubuntu icinga-bullseye Release
+  404  Not Found [IP: 185.233.189.126 443]
+Hit:7 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists... Done
+E: The repository 'https://packages.icinga.com/ubuntu icinga-bullseye Release' does not have a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+W: https://download.docker.com/linux/ubuntu/dists/noble/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+adrian@adrian-TM1703:~$ sudo apt-get update
+Hit:1 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:2 https://dl.google.com/linux/chrome/deb stable InRelease                                                                                                                                
+Hit:3 https://download.docker.com/linux/ubuntu noble InRelease                                                                                                                               
+Hit:4 http://archive.ubuntu.com/ubuntu noble InRelease                                                                         
+Ign:5 https://packages.icinga.com/ubuntu icinga-bullseye InRelease           
+Hit:6 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Err:7 https://packages.icinga.com/ubuntu icinga-bullseye Release
+  404  Not Found [IP: 185.233.189.126 443]
+Hit:8 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists... Done
+E: The repository 'https://packages.icinga.com/ubuntu icinga-bullseye Release' does not have a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+W: https://download.docker.com/linux/ubuntu/dists/noble/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+adrian@adrian-TM1703:~$ sudo apt-get install -y docker-ce
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  containerd.io docker-buildx-plugin docker-ce-cli docker-ce-rootless-extras docker-compose-plugin git git-man liberror-perl libslirp0 pigz slirp4netns
+Suggested packages:
+  aufs-tools cgroupfs-mount | cgroup-lite git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  containerd.io docker-buildx-plugin docker-ce docker-ce-cli docker-ce-rootless-extras docker-compose-plugin git git-man liberror-perl libslirp0 pigz slirp4netns
+0 upgraded, 12 newly installed, 0 to remove and 103 not upgraded.
+Need to get 94.1 MB/129 MB of archives.
+After this operation, 470 MB of additional disk space will be used.
+Get:1 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-buildx-plugin amd64 0.19.3-1~ubuntu.24.04~noble [30.7 MB]
+Get:2 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-ce-cli amd64 5:27.4.1-1~ubuntu.24.04~noble [15.1 MB]
+Get:3 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-ce amd64 5:27.4.1-1~ubuntu.24.04~noble [25.9 MB]                                                                    
+Get:4 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-ce-rootless-extras amd64 5:27.4.1-1~ubuntu.24.04~noble [9,589 kB]                                                   
+Get:5 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-compose-plugin amd64 2.32.1-1~ubuntu.24.04~noble [12.8 MB]                                                          
+Fetched 94.1 MB in 15s (6,478 kB/s)                                                                                                                                                          
+Selecting previously unselected package pigz.
+(Reading database ... 200179 files and directories currently installed.)
+Preparing to unpack .../00-pigz_2.8-1_amd64.deb ...
+Unpacking pigz (2.8-1) ...
+Selecting previously unselected package containerd.io.
+Preparing to unpack .../01-containerd.io_1.7.24-1_amd64.deb ...
+Unpacking containerd.io (1.7.24-1) ...
+Selecting previously unselected package docker-buildx-plugin.
+Preparing to unpack .../02-docker-buildx-plugin_0.19.3-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-buildx-plugin (0.19.3-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-ce-cli.
+Preparing to unpack .../03-docker-ce-cli_5%3a27.4.1-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-ce-cli (5:27.4.1-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-ce.
+Preparing to unpack .../04-docker-ce_5%3a27.4.1-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-ce (5:27.4.1-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-ce-rootless-extras.
+Preparing to unpack .../05-docker-ce-rootless-extras_5%3a27.4.1-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-ce-rootless-extras (5:27.4.1-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-compose-plugin.
+Preparing to unpack .../06-docker-compose-plugin_2.32.1-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-compose-plugin (2.32.1-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package liberror-perl.
+Preparing to unpack .../07-liberror-perl_0.17029-2_all.deb ...
+Unpacking liberror-perl (0.17029-2) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../08-git-man_1%3a2.43.0-1ubuntu7.1_all.deb ...
+Unpacking git-man (1:2.43.0-1ubuntu7.1) ...
+Selecting previously unselected package git.
+Preparing to unpack .../09-git_1%3a2.43.0-1ubuntu7.1_amd64.deb ...
+Unpacking git (1:2.43.0-1ubuntu7.1) ...
+Selecting previously unselected package libslirp0:amd64.
+Preparing to unpack .../10-libslirp0_4.7.0-1ubuntu3_amd64.deb ...
+Unpacking libslirp0:amd64 (4.7.0-1ubuntu3) ...
+Selecting previously unselected package slirp4netns.
+Preparing to unpack .../11-slirp4netns_1.2.1-1build2_amd64.deb ...
+Unpacking slirp4netns (1.2.1-1build2) ...
+Setting up liberror-perl (0.17029-2) ...
+Setting up docker-buildx-plugin (0.19.3-1~ubuntu.24.04~noble) ...
+Setting up containerd.io (1.7.24-1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /usr/lib/systemd/system/containerd.service.
+Setting up docker-compose-plugin (2.32.1-1~ubuntu.24.04~noble) ...
+Setting up docker-ce-cli (5:27.4.1-1~ubuntu.24.04~noble) ...
+Setting up libslirp0:amd64 (4.7.0-1ubuntu3) ...
+Setting up pigz (2.8-1) ...
+Setting up git-man (1:2.43.0-1ubuntu7.1) ...
+Setting up docker-ce-rootless-extras (5:27.4.1-1~ubuntu.24.04~noble) ...
+Setting up slirp4netns (1.2.1-1build2) ...
+Setting up docker-ce (5:27.4.1-1~ubuntu.24.04~noble) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /usr/lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /usr/lib/systemd/system/docker.socket.
+Setting up git (1:2.43.0-1ubuntu7.1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.3) ...
+adrian@adrian-TM1703:~$ sudo docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+c1ec31eb5944: Pull complete 
+Digest: sha256:5b3cc85e16e3058003c13b7821318369dad01dac3dbb877aac3c28182255c724
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+adrian@adrian-TM1703:~$ sudo docker run -it ubuntu
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+de44b265507a: Pull complete 
+Digest: sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92cc6734ab
+Status: Downloaded newer image for ubuntu:latest
+root@ca8e94769df2:/# mkdir nginx-php-fpm
+cd nginx-php-fpm
+root@ca8e94769df2:/nginx-php-fpm# nano Dockerfile
+bash: nano: command not found
+root@ca8e94769df2:/nginx-php-fpm# 

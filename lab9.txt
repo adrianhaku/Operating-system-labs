@@ -1,0 +1,258 @@
+adrian@adrian-TM1703:~$ sudo apt update
+[sudo] password for adrian: 
+Get:1 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Hit:2 http://archive.ubuntu.com/ubuntu noble InRelease                         
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]        
+Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]      
+Ign:5 https://packages.icinga.com/ubuntu icinga-bullseye InRelease             
+Err:6 https://packages.icinga.com/ubuntu icinga-bullseye Release
+  404  Not Found [IP: 185.233.189.126 443]
+Get:7 http://security.ubuntu.com/ubuntu noble-security/restricted Sources [21.5 kB]
+Get:8 http://security.ubuntu.com/ubuntu noble-security/main Sources [126 kB]
+Get:9 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [496 kB]
+Get:10 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [101 kB]
+Get:11 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [7,228 B]
+Get:12 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [480 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main Sources [299 kB]    
+Get:14 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [92.5 kB]
+Get:15 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:16 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [561 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble-updates/universe Sources [351 kB]
+Get:18 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [52.0 kB]
+Get:19 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [212 B]
+Get:20 http://archive.ubuntu.com/ubuntu noble-updates/restricted Sources [21.5 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [670 kB]
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/main Translation-en [157 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [131 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble-updates/main Icons (48x48) [35.1 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble-updates/main Icons (64x64) [51.5 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [480 kB]
+Get:27 http://archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [92.5 kB]
+Get:28 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:29 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [718 kB]
+Get:30 http://archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [213 kB]
+Get:31 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [310 kB]
+Get:32 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:33 http://archive.ubuntu.com/ubuntu noble-backports/universe Sources [7,540 B]
+Get:34 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [208 B]
+Get:35 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:36 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [10.7 kB]
+Get:37 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [21.9 kB]
+Get:38 http://archive.ubuntu.com/ubuntu noble-backports/universe Icons (48x48) [8,489 B]
+Get:39 http://archive.ubuntu.com/ubuntu noble-backports/universe Icons (64x64) [11.4 kB]
+Get:40 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Reading package lists... Done                   
+E: The repository 'https://packages.icinga.com/ubuntu icinga-bullseye Release' does not have a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+adrian@adrian-TM1703:~$ sudo apt install nginx
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  nginx-common
+Suggested packages:
+  fcgiwrap nginx-doc
+The following NEW packages will be installed:
+  nginx nginx-common
+0 upgraded, 2 newly installed, 0 to remove and 82 not upgraded.
+Need to get 552 kB of archives.
+After this operation, 1,596 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 nginx-common all 1.24.0-2ubuntu7.1 [31.2 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 nginx amd64 1.24.0-2ubuntu7.1 [521 kB]
+Fetched 552 kB in 0s (1,389 kB/s)
+Preconfiguring packages ...
+Selecting previously unselected package nginx-common.
+(Reading database ... 199230 files and directories currently installed.)
+Preparing to unpack .../nginx-common_1.24.0-2ubuntu7.1_all.deb ...
+Unpacking nginx-common (1.24.0-2ubuntu7.1) ...
+Selecting previously unselected package nginx.
+Preparing to unpack .../nginx_1.24.0-2ubuntu7.1_amd64.deb ...
+Unpacking nginx (1.24.0-2ubuntu7.1) ...
+Setting up nginx (1.24.0-2ubuntu7.1) ...
+Not attempting to start NGINX, port 80 is already in use.
+Setting up nginx-common (1.24.0-2ubuntu7.1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /usr/lib/systemd/system/nginx.service.
+Could not execute systemctl:  at /usr/bin/deb-systemd-invoke line 148.
+Processing triggers for ufw (0.36.2-6) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+adrian@adrian-TM1703:~$ sudo systemctl status nginx
+× nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; preset: enabled)
+     Active: failed (Result: exit-code) since Sat 2024-11-23 15:41:53 MSK; 35s ago
+       Docs: man:nginx(8)
+    Process: 12304 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 12305 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=1/FAILURE)
+        CPU: 34ms
+
+Nov 23 15:41:51 adrian-TM1703 nginx[12305]: nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+Nov 23 15:41:51 adrian-TM1703 nginx[12305]: nginx: [emerg] bind() to [::]:80 failed (98: Address already in use)
+Nov 23 15:41:52 adrian-TM1703 nginx[12305]: nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+Nov 23 15:41:52 adrian-TM1703 nginx[12305]: nginx: [emerg] bind() to [::]:80 failed (98: Address already in use)
+Nov 23 15:41:52 adrian-TM1703 nginx[12305]: nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+Nov 23 15:41:52 adrian-TM1703 nginx[12305]: nginx: [emerg] bind() to [::]:80 failed (98: Address already in use)
+Nov 23 15:41:53 adrian-TM1703 nginx[12305]: nginx: [emerg] still could not bind()
+Nov 23 15:41:53 adrian-TM1703 systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+Nov 23 15:41:53 adrian-TM1703 systemd[1]: nginx.service: Failed with result 'exit-code'.
+Nov 23 15:41:53 adrian-TM1703 systemd[1]: Failed to start nginx.service - A high performance web server and a reverse proxy server.
+adrian@adrian-TM1703:~$ sudo systemctl start nginx
+Job for nginx.service failed because the control process exited with error code.
+See "systemctl status nginx.service" and "journalctl -xeu nginx.service" for details.
+adrian@adrian-TM1703:~$ ^C
+adrian@adrian-TM1703:~$ sudo systemctl status nginx.service
+× nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; preset: enabled)
+     Active: failed (Result: exit-code) since Sat 2024-11-23 15:44:13 MSK; 1min 56s ago
+       Docs: man:nginx(8)
+    Process: 12487 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 12489 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=1/FAILURE)
+        CPU: 40ms
+
+Nov 23 15:44:12 adrian-TM1703 nginx[12489]: nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+Nov 23 15:44:12 adrian-TM1703 nginx[12489]: nginx: [emerg] bind() to [::]:80 failed (98: Address already in use)
+Nov 23 15:44:12 adrian-TM1703 nginx[12489]: nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+Nov 23 15:44:12 adrian-TM1703 nginx[12489]: nginx: [emerg] bind() to [::]:80 failed (98: Address already in use)
+Nov 23 15:44:13 adrian-TM1703 nginx[12489]: nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+Nov 23 15:44:13 adrian-TM1703 nginx[12489]: nginx: [emerg] bind() to [::]:80 failed (98: Address already in use)
+Nov 23 15:44:13 adrian-TM1703 nginx[12489]: nginx: [emerg] still could not bind()
+Nov 23 15:44:13 adrian-TM1703 systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+Nov 23 15:44:13 adrian-TM1703 systemd[1]: nginx.service: Failed with result 'exit-code'.
+Nov 23 15:44:13 adrian-TM1703 systemd[1]: Failed to start nginx.service - A high performance web server and a reverse proxy server.
+adrian@adrian-TM1703:~$ sudo lsof -i :80
+COMMAND  PID     USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+apache2 1707     root    4u  IPv6  14832      0t0  TCP *:http (LISTEN)
+apache2 1716 www-data    4u  IPv6  14832      0t0  TCP *:http (LISTEN)
+apache2 1718 www-data    4u  IPv6  14832      0t0  TCP *:http (LISTEN)
+apache2 1719 www-data    4u  IPv6  14832      0t0  TCP *:http (LISTEN)
+apache2 1720 www-data    4u  IPv6  14832      0t0  TCP *:http (LISTEN)
+apache2 1721 www-data    4u  IPv6  14832      0t0  TCP *:http (LISTEN)
+adrian@adrian-TM1703:~$ sudo systemctl stop apache2
+adrian@adrian-TM1703:~$ sudo systemctl start nginx
+adrian@adrian-TM1703:~$ sudo systemctl status nginx
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2024-11-23 15:49:12 MSK; 17s ago
+       Docs: man:nginx(8)
+    Process: 12851 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 12852 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+   Main PID: 12854 (nginx)
+      Tasks: 9 (limit: 9335)
+     Memory: 6.3M (peak: 6.8M)
+        CPU: 115ms
+     CGroup: /system.slice/nginx.service
+             ├─12854 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"
+             ├─12855 "nginx: worker process"
+             ├─12856 "nginx: worker process"
+             ├─12857 "nginx: worker process"
+             ├─12858 "nginx: worker process"
+             ├─12859 "nginx: worker process"
+             ├─12860 "nginx: worker process"
+             ├─12862 "nginx: worker process"
+             └─12863 "nginx: worker process"
+
+Nov 23 15:49:12 adrian-TM1703 systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Nov 23 15:49:12 adrian-TM1703 systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
+adrian@adrian-TM1703:~$ sudo dpkg --remove nginx
+[sudo] password for adrian: 
+dpkg: dependency problems prevent removal of nginx:
+ nginx-common depends on nginx (>= 1.24.0-2ubuntu7.1).
+ nginx-common depends on nginx (<< 1.24.0-2ubuntu7.1.1~).
+ nginx-common depends on nginx (>= 1.24.0-2ubuntu7.1).
+ nginx-common depends on nginx (<< 1.24.0-2ubuntu7.1.1~).
+
+dpkg: error processing package nginx (--remove):
+ dependency problems - not removing
+Errors were encountered while processing:
+ nginx
+adrian@adrian-TM1703:~$ ^C
+adrian@adrian-TM1703:~$ sudo apt-get remove --purge nginx nginx-common
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages will be REMOVED:
+  nginx* nginx-common*
+0 upgraded, 0 newly installed, 2 to remove and 82 not upgraded.
+After this operation, 1,596 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... 199277 files and directories currently installed.)
+Removing nginx-common (1.24.0-2ubuntu7.1) ...
+Removing nginx (1.24.0-2ubuntu7.1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+(Reading database ... 199253 files and directories currently installed.)
+Purging configuration files for nginx-common (1.24.0-2ubuntu7.1) ...
+Processing triggers for ufw (0.36.2-6) ...
+adrian@adrian-TM1703:~$ sudo dpkg --purge nginx
+dpkg: warning: ignoring request to remove nginx which isn't installed
+adrian@adrian-TM1703:~$ sudo apt update
+Hit:1 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu noble InRelease                       
+Ign:3 https://packages.icinga.com/ubuntu icinga-bullseye InRelease           
+Err:4 https://packages.icinga.com/ubuntu icinga-bullseye Release
+  404  Not Found [IP: 185.233.189.126 443]
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Hit:6 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists... Done
+E: The repository 'https://packages.icinga.com/ubuntu icinga-bullseye Release' does not have a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+adrian@adrian-TM1703:~$ sudo apt install -y snapd
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+snapd is already the newest version (2.65.3+24.04).
+0 upgraded, 0 newly installed, 0 to remove and 82 not upgraded.
+adrian@adrian-TM1703:~$ sudo snap install vlc
+vlc 3.0.20-1-g2617de71b6 from VideoLAN✓ installed
+adrian@adrian-TM1703:~$ vlc --version
+VLC media player 3.0.20 Vetinari (revision 3.0.20-1-g2617de71b6)
+VLC version 3.0.20 Vetinari (3.0.20-1-g2617de71b6)
+Compiled by videolan on runner-st17ydin-project-435-concurrent-1 (Oct 31 2023 02:16:47)
+Compiler: gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1)
+This program comes with NO WARRANTY, to the extent permitted by law.
+You may redistribute it under the terms of the GNU General Public License;
+see the file named COPYING for details.
+Written by the VideoLAN team; see the AUTHORS file.
+adrian@adrian-TM1703:~$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+adrian@adrian-TM1703:~$ sudo iptables -F
+adrian@adrian-TM1703:~$ sudo iptables -P INPUT DROP
+adrian@adrian-TM1703:~$ sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+adrian@adrian-TM1703:~$ sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+adrian@adrian-TM1703:~$ sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+adrian@adrian-TM1703:~$ sudo apt install iptables-persistent
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  netfilter-persistent
+The following packages will be REMOVED:
+  ufw
+The following NEW packages will be installed:
+  iptables-persistent netfilter-persistent
+0 upgraded, 2 newly installed, 1 to remove and 82 not upgraded.
+Need to get 14.3 kB of archives.
+After this operation, 780 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+Ign:1 http://archive.ubuntu.com/ubuntu noble/universe amd64 netfilter-persistent all 1.0.20
+Ign:2 http://archive.ubuntu.com/ubuntu noble/universe amd64 iptables-persistent all 1.0.20
+Ign:1 http://archive.ubuntu.com/ubuntu noble/universe amd64 netfilter-persistent all 1.0.20
+Ign:2 http://archive.ubuntu.com/ubuntu noble/universe amd64 iptables-persistent all 1.0.20
+Ign:1 http://archive.ubuntu.com/ubuntu noble/universe amd64 netfilter-persistent all 1.0.20
+Ign:2 http://archive.ubuntu.com/ubuntu noble/universe amd64 iptables-persistent all 1.0.20
+0% [Connecting to archive.ubuntu.com]
+Err:1 http://archive.ubuntu.com/ubuntu noble/universe amd64 netfilter-persistent all 1.0.20
+  Temporary failure resolving 'archive.ubuntu.com'
+Err:2 http://archive.ubuntu.com/ubuntu noble/universe amd64 iptables-persistent all 1.0.20
+  Temporary failure resolving 'archive.ubuntu.com'
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/universe/i/iptables-persistent/netfilter-persistent_1.0.20_all.deb  Temporary failure resolving 'archive.ubuntu.com'
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/universe/i/iptables-persistent/iptables-persistent_1.0.20_all.deb  Temporary failure resolving 'archive.ubuntu.com'
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+adrian@adrian-TM1703:~$

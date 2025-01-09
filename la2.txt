@@ -1,0 +1,37 @@
+adrian@adrian-TM1703:~$ sudo adduser jolly
+[sudo] password for adrian: 
+info: Adding user `jolly' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `jolly' (1002) ...
+info: Adding new user `jolly' (1002) with group `jolly (1002)' ...
+info: Creating home directory `/home/jolly' ...
+info: Copying files from `/etc/skel' ...
+New password: 
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for jolly
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] y
+info: Adding new user `jolly' to supplemental / extra groups `users' ...
+info: Adding user `jolly' to group `users' ...
+adrian@adrian-TM1703:~$ getent passwd jolly
+jolly:x:1002:1002:,,,:/home/jolly:/bin/bash
+adrian@adrian-TM1703:~$ sudo userdel jolly
+adrian@adrian-TM1703:~$ getent passwd mark
+adrian@adrian-TM1703:~$ getent passwd jolly
+adrian@adrian-TM1703:~$ sudo groupadd group_a
+groupadd: group 'group_a' already exists
+adrian@adrian-TM1703:~$ sudo groupdel group_a
+adrian@adrian-TM1703:~$ sudo groupadd group_a
+adrian@adrian-TM1703:~$ sudo groupadd group_c
+adrian@adrian-TM1703:~$ sudo gpasswd -d martha group_a
+Removing user martha from group group_a
+adrian@adrian-TM1703:~$ sudo usermod -aG sudo jolly
+[sudo] password for adrian:
+
